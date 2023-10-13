@@ -1,0 +1,22 @@
+algorithm sentence
+vAR
+nbv,nbw,nbc:=integer;
+sentence:=STRING;
+BEGIN
+nbc:=0;
+nbw:=1;
+nbv:=0;
+write("type the sentence")
+read(sentence)
+REPEAT
+
+if (sentence[nbc]in ["a","e","i","o","u","y"])THEN
+nbv:=nbv=1;
+END_IF
+nbc:=nbc+1;
+UNTIL(sentence[nbc]=",")
+
+
+write(the number of character is "nbc+1)
+write(the number of word is ",nbw)
+write(the number of vowels is "nbv )
